@@ -591,7 +591,7 @@ begin
     clearOutOfRangeMessg;
     TTreeHack(list).scrolledLeft := 0;
     scrollToBack;
-    Application.ProcessMessages;
+    List.Update;
     filterMessages(fCtxt);
   end;
 end;
@@ -636,7 +636,7 @@ procedure TCEMessagesWidget.updateLoop;
 begin
   clearOutOfRangeMessg;
   scrollToBack;
-  Application.ProcessMessages;
+  List.Update;
   filterMessages(fCtxt);
 end;
 
